@@ -1,3 +1,8 @@
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
@@ -35,4 +40,8 @@
 
 .corporate{
     padding-bottom: 50px;
+}
+
+.navbar-dark {
+    background-color: #512DAB;
 }
