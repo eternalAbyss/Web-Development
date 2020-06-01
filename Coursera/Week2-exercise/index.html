@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Week 2</title>
+ 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -11,16 +13,15 @@
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
-    
-    <title>Week 2</title>
 </head>
+
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand mr-auto">Ristorante con Fusion</a>
+            <a href="#" class="navbar-brand mr-auto"><img src="./img/logo.png" height="30" width="41" alt="logo"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-lg fa-home"></span> Home</a></li>
@@ -41,7 +42,8 @@
                         experience. Our lipsmacking creations will tickle your culinary senses!
                     </p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="./img/logo.png" alt="logo" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -53,15 +55,20 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>
-                    Uthappizza
-                </h2>
-                <p>
-                    A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with 
-                    Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and 
-                    Buffalo Paneer.
-                </p>
-            </div>
+                <div class="media">      
+                    <img src="./img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">              
+                    <div class="media-body">
+                        <h2 class="mt-0">
+                            Uthappizza
+                        </h2>
+                        <p class="d-none d-sm-block">
+                            A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with 
+                            Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and 
+                            Buffalo Paneer.
+                        </p>
+                    </div>
+                </div>
+                </div>
         </div>
 
 
@@ -86,9 +93,14 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img src="./img/alberto.png" alt="alberto" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
