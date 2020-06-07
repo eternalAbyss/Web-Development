@@ -1,0 +1,23 @@
+{
+  "name": "week4",
+  "version": "1.0.0",
+  "description": "Content for week 4 of the course.",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "lite-server": "^2.5.4",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "start" : "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Utkarsh Singh",
+  "license": "ISC"
+}
