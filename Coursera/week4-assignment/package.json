@@ -13,13 +13,18 @@
   "devDependencies": {
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "parallelshell": "^3.0.1",
     "sass": "^1.26.8"
   },
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/" 
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": " parallelshell \"npm run watch:scss\" \"npm run lite\" ",
+    "parallel": "parallelshell \"npm run watch:scss\""
   },
   "author": "Utkarsh Singh",
   "license": "ISC"
