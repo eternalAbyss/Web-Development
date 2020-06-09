@@ -1,0 +1,23 @@
+{
+  "name": "week4-assignment",
+  "version": "1.0.0",
+  "description": "assignment of the week 4 content of the course",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Utkarsh Singh",
+  "license": "ISC"
+}
