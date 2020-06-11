@@ -11,11 +11,16 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
     "parallelshell": "^3.0.1",
-    "sass": "^1.26.8"
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.8",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "scripts": {
     "start": "npm run watch:all",
@@ -24,7 +29,11 @@
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": " parallelshell \"npm run watch:scss\" \"npm run lite\" ",
-    "parallel": "parallelshell \"npm run watch:scss\""
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "author": "Utkarsh Singh",
   "license": "ISC"
